@@ -21,7 +21,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-
+app.use("/.well-known/apple-app-site-association", (req, res, next) => {
+  res.setHeader("Content-Type", "application/json");
+  next();
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
