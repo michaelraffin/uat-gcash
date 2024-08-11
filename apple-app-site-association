@@ -1,41 +1,41 @@
 {
-  "applinks": {
-    "details": [
-      {
-        "appIDs": [
-          "Z9783MH7AR.xyz.mynt.gcashdev",
-          "Z9783MH7AR.com.globetel.gcash"
-        ],
-        "components": [
-          {
-            "/": "/gcash-ac-cashier-intermediate-web/h*",
-            "comment": "Matches any URL with a path that starts with /gcash-ac-cashier-intermediate-web/h."
-          },
-          {
-            "/": "/gcash-merchants-auth/*",
-            "comment": "Matches any URL with a path that starts with /gcash-merchants-auth/."
-          },
-          {
-            "/": "/gcash-app-merchants-auth/*",
-            "exclude": true,
-            "comment": "Matches any URL with a path that starts with /gcash-app-merchants-auth/ and instructs the system not to open it as a universal link.."
-          },
-          {
-            "/": "",
-            "?": {
-              "redirect": "?*"
-            },
-            "comment": "Matches any URL with a path that starts with / and that has a query item with name 'redirect' and a value not empty"
-          },
-          {
-            "/": "",
-            "?": {
-              "link": "?*"
-            },
-            "comment": "Matches any URL with a path that starts with / and that has a query item with name âlinkâ and a value not empty"
-          }
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "Z9783MH7AR.com.globetel.gcash",
+                    "Z9783MH7AR.com.mynt.gcashtest",
+                    "VWSPD4GCAX.com.globetel.GCash"
+                ],
+                "components": [
+                    {
+                        "/": "/gcash-ac-cashier-intermediate-web/h*",
+                        "comment": "Matches any URL with a path that starts with /gcash-ac-cashier-intermediate-web/h."
+                    },
+                    {
+                        "/": "/gcash-merchants-auth/*",
+                        "comment": "Matches any URL with a path that starts with /gcash-merchants-auth/."
+                    },
+                    {
+                        "/": "/gcash-app-merchants-auth/*",
+                        "comment": "Matches any URL with a path that starts with /gcash-app-merchants-auth/."
+                    },
+                    {
+                        "/": "",
+                        "?": {
+                            "redirect": "?*"
+                        },
+                        "comment": "Matches any URL with a path that starts with / and that has a query item with name 'redirect' and a value not empty"
+                    },
+                    {
+                        "/": "",
+                        "?": {
+                            "link": "?*"
+                        },
+                        "comment": "Matches any URL with a path that starts with / and that has a query item with name Ã¢â¬ËlinkÃ¢â¬â¢ and a value not empty"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }
